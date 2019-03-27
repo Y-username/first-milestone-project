@@ -1,0 +1,35 @@
+.header {
+    left: 0;
+    top: 0;
+    right: 0; 
+    position:fixed;
+    border-bottom: 15px solid #034d9e;
+    height: 92px;
+    width: 100%;
+    background-color: #eac350;
+}
+
+.container {
+    height: 80px;
+    width: 80%;
+    position: relative;
+}
+
+.header-row {
+    height: 80px;
+    float: inherit;
+}
+
+.menubar-container {
+  display: inline-block;
+  cursor: pointer;
+  padding:20px;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 32px;
+  height: 5px;
+  background-color: #034d9e;
+  margin: 6px 0;
+  transition: 0.4s;
+}
