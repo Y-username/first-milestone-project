@@ -1,3 +1,4 @@
+/*----------------------------------header*/
 .header {
     left: 0;
     top: 0;
@@ -13,6 +14,7 @@
     height: 80px;
     width: 80%;
     position: relative;
+    padding:0;
 }
 
 .header-row {
@@ -21,15 +23,67 @@
 }
 
 .menubar-container {
-  display: inline-block;
   cursor: pointer;
-  padding:20px;
+  padding: 0px;
 }
-
+.dropdownbutton{
+    border: none;
+    width: 48px;
+    height: 44px;
+    background-color: #eac350;
+    margin-top: 16px;
+    margin-left: 64px;
+}
 .bar1, .bar2, .bar3 {
+  margin-left: 1px
   width: 32px;
   height: 5px;
   background-color: #034d9e;
   margin: 6px 0;
   transition: 0.4s;
+}
+.dropdownMenu{
+     margin-top:20px;
+     margin-bottom: 20px;
+     padding:0;
+     background-color: #d2ad44;
+     list-style: none;
+     position: absolute;
+     top: 72px;
+     left: 0;
+     right: 0;
+     width: 180px;
+     height: 200;
+     z-index: -1;
+     text-align: center;
+     transform: translateY(-110%);
+     transition: transform .7s ease-in-out;
+}
+.dropdown{
+    margin-top: 0;
+    height: 77px;
+    width: 180px;
+    position: relative;
+    background-color: #eac350;
+}
+
+.dropdown:hover button{
+    background-color: #d2ad44;
+}
+
+.dropdown:hover .dropdownMenu{
+    transform: translateY(0);
+}
+.dropdownLink{
+    text-decoration: none;
+    padding: 10px 5px;
+    background-color: #034d9e;
+    color: #eac350;
+    display: block;
+    transition: background-color .5s ease-in-out color .5s ease-in-out;
+}
+
+.dropdownLink:hover{
+    color: white;
+    background-color: gray;
 }
