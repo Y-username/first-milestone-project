@@ -58,13 +58,16 @@
      text-align: center;
      transform: translateY(-110%);
      transition: transform .7s ease-in-out;
+     font: Fjalla+One;
+     font-size: 20px;
 }
 .dropdown{
     margin-top: 0;
     height: 77px;
     width: 180px;
-    position: relative;
+    position: absolute;
     background-color: #eac350;
+    display: inline-block;
 }
 
 .dropdown:hover button{
@@ -84,6 +87,27 @@
 }
 
 .dropdownLink:hover{
-    color: white;
-    background-color: gray;
+    color: #034d9e;
+    background-color: #eac350;
+}
+
+.logo{
+    display: inline-block;
+    padding: 0;
+    float: right;
+    margin-bottom: 15px;
+    margin-right: 50px;
+}
+
+.logoHan{
+    text-align: center;
+    font-family: Anton, sans-serif;
+    color: #034d9e;
+    font-size: 60px;
+}
+
+footer{
+    background-color: #034d9e;
+    height: 90px;
+    width: 100%;
 }
